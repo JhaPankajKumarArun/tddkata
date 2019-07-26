@@ -1,0 +1,2 @@
+# tddkata
+Learning tdd kata
