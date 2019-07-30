@@ -168,11 +168,11 @@ div.footer {
 </style>
 </head>
 <body>
-<h2>Report for test.StringCalculatorSpec</h2>
+<h2>Report for test.acceptance.AccountServiceShould</h2>
 <hr></hr>
 <div class='summary-report'>
 <h3>Summary:</h3>
-<div class='date-test-ran'>Created on Mon Jul 29 10:39:11 IST 2019 by pankajj</div>
+<div class='date-test-ran'>Created on Tue Jul 30 13:58:49 IST 2019 by pankajj</div>
 <table class='summary-table'>
 <thead>
 <th>Executed features</th>
@@ -184,12 +184,12 @@ div.footer {
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td>2</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100.0%</td>
-<td>0.016 seconds</td>
+<td>0.0%</td>
+<td>44.340 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -203,13 +203,16 @@ div.footer {
 <tbody>
 <ul id='toc'>
 <li>
-<a href='#-519083716' class='feature-toc-pass'>API to calculate sum from given string</a>
+<a href='#-621000415' class='feature-toc-failure'>deposit the given amount into account</a>
+</li>
+<li>
+<a href='#1092714455' class='feature-toc-failure'>withdraw the given amount from account</a>
 </li>
 </ul>
 <tr>
 <td colspan='10'>
-<div class='feature-description' id='-519083716'>
-<span>API to calculate sum from given string</span>
+<div class='feature-description failure' id='-621000415'>
+<span>deposit the given amount into account</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
 </span>
@@ -221,7 +224,7 @@ div.footer {
 <div class='block-kind'>Given:</div>
 </td>
 <td>
-<div class='block-text'>An instance of StringCalculator</div>
+<div class='block-text'>amount to deposit</div>
 </td>
 </tr>
 <tr>
@@ -229,7 +232,7 @@ div.footer {
 <div class='block-kind'>When:</div>
 </td>
 <td>
-<div class='block-text'>StringCalculator.add is called</div>
+<div class='block-text'>amount is deposited</div>
 </td>
 </tr>
 <tr>
@@ -237,45 +240,69 @@ div.footer {
 <div class='block-kind'>Then:</div>
 </td>
 <td>
-<div class='block-text'>It should return zero</div>
+<div class='block-text'>amount is commited in repository</div>
 </td>
 </tr>
 <tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>input</th>
-<th class='ex-header'>result</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'></td>
-<td class='ex-value'>-1</td>
-<td class='ex-result'>OK</td>
-</tr>
-<tr class='ex-pass'>
-<td class='ex-value'>1,2</td>
-<td class='ex-value'>3</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<pre>Too few invocations for:<br/><br/>1*transactionRepository.save(transaction)   (0 invocations)<br/><br/>Unmatched invocations (ordered by similarity):<br/><br/>1 * transactionRepository.save(tdd.acceptance.Transaction@c9864f72)<br/><br/></pre>
+</li>
+</ul>
+</div>
 </div>
 </td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description failure' id='1092714455'>
+<span>withdraw the given amount from account</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
 <td>
-<div class='spec-status'>2/2 passed</div>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>amount to withdrawl</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>amount is withdrawn</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>amount is commited in repository</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<pre>Too few invocations for:<br/><br/>1*transactionRepository.save(transaction)   (0 invocations)<br/><br/>Unmatched invocations (ordered by similarity):<br/><br/>1 * transactionRepository.save(tdd.acceptance.Transaction@a33262c6)<br/><br/></pre>
+</li>
+</ul>
+</div>
+</div>
 </td>
 </tr>
 </tbody>
